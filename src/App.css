@@ -1,0 +1,36 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #F1F1F1;
+}
+
+.App h1 {
+  font-size: 14px;
+  color: gray;
+}
+
+.TodoContainer {
+  width: 700px;
+  border: 1px solid darkgray;
+  display: block;
+  padding: 0;
+  border-radius: 10px;
+  background-color: white;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+
+.TodoItem {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.Priority-1 {
+  background-color: #e53935;
+  color: white;
+}
