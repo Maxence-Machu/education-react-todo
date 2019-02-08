@@ -1,36 +1,127 @@
 .App {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  background-color: #F1F1F1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    background-color: #F1F1F1;
 }
 
 .App h1 {
-  font-size: 14px;
-  color: gray;
+    color: gray;
 }
 
 .TodoContainer {
-  width: 700px;
-  border: 1px solid darkgray;
-  display: block;
-  padding: 0;
-  border-radius: 10px;
-  background-color: white;
-  max-height: 50vh;
-  overflow-y: scroll;
+    margin-top: 30px;
+    width: 700px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.10);
+    border-radius: 7px;
+    display: block;
+    min-height: 50px;
+    background-color: white;
+    max-height: 50vh;
+    overflow-y: scroll;
+    padding: 16px 10px;
 }
 
+.TodoContainer h2 {
+    font-size: 15px;
+    padding-left: 10px;
+    color: darkgray;
+}
 
 .TodoItem {
-  padding: 5px 10px;
-  font-size: 14px;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.TodoItem .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TodoItem .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+}
+
+.TodoItem .content {
+    display: flex;
+    flex: 1;
+}
+
+.TodoItem .content p {
+    margin: 0;
+}
+
+.TodoItem .content {
+    padding: 10px;
+}
+
+.TodoItem.Checked {
+    text-decoration: line-through;
+}
+
+.TodoItem button {
+    text-decoration: none !important;
 }
 
 .Priority-1 {
-  background-color: #e53935;
-  color: white;
+    background-color: #e53935;
+    color: white;
 }
+
+.text-1 {
+    color: #e53935 !important;
+}
+
+.text-2 {
+    color: darkorange !important;
+}
+
+.Priority-2 {
+    background-color: darkorange;
+    color: #F1F1F1;
+}
+
+.Priority-3 {
+    background-color: white;
+    color: grey;
+}
+
+.btn-delete {
+    border: 1px solid #F1F1F1;
+}
+
+.FormContainer {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.10);
+    border-radius: 7px;
+    margin-top: 50px;
+    background-color: white;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.FormContainer input {
+    border: 0;
+    font-size: 14px;
+    flex: 1;
+    padding-left: 10px;
+    outline: none;
+}
+
+.FormContainer select {
+}
+
+
