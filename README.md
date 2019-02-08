@@ -8,6 +8,7 @@ Todolist
 This app is built with [create-react-app](https://github.com/facebook/create-react-app)
 ```
 $ cd education-react-todo
+$ npm install
 $ npm start
 ```
 The npm start command starts the React node server.
